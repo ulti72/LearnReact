@@ -1,0 +1,27 @@
+SECTION 3:
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. React component name (javascript function) should always starts from Capital letter.
+
+2. Component example:
+
+function Animal(props){
+  return(
+    <div className="animal">
+      <h1>{props.name}</h1>
+      <p>Sound: {props.sound} </p>
+     </div>
+  );
+}
+
+3. All component should under single div element.
+
+4. ReactDom is package that map react component to actual dom elements of the web page
+
+ReactDOM.render(my_username,document.querySelector("#cp"));
+
+
+5. We will use babel preprocessor for javascript 
+Babel : Babel is a JavaScript compiler that transform the latest JavaScript features, which are not understandable to every browser
+
+6. JSX : JSX is a syntactical extension to JavaScript. It comes with the full power of JavaScript.
