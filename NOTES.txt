@@ -1,4 +1,4 @@
-SECTION 3:
+SECTION 3:  https://github.com/facebook/create-react-app
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1. React component name (javascript function) should always starts from Capital letter.
@@ -25,3 +25,42 @@ ReactDOM.render(my_username,document.querySelector("#cp"));
 Babel : Babel is a JavaScript compiler that transform the latest JavaScript features, which are not understandable to every browser
 
 6. JSX : JSX is a syntactical extension to JavaScript. It comes with the full power of JavaScript.
+
+
+7. New React app structure:
+
+my-app
+├── README.md
+├── node_modules
+├── package.json
+├── .gitignore
+├── public
+│   ├── favicon.ico
+│   ├── index.html 			//single html file contating root div block
+│   └── manifest.json
+└── src
+    ├── App.css
+    ├── App.js  			//will write React components here
+    ├── App.test.js
+    ├── index.css
+    ├── index.js            //call renderDom object to root component
+    ├── logo.svg
+    └── serviceWorker.js
+    └── setupTests.js
+
+
+ 8. Creating react app: 
+ npm install create-react-app -g // only for the first time for configuring.
+ create-react-app  my_new_app --scripts-version 1.1.5
+cd my_new_app 
+npm start  //to start the app
+
+
+(note name can no contain capital letter: app name should be all in lower case)
+
+
+8. Why use JSX:
+becuse creating components using react.createelement is really messy hence we use JSX
+//syntax of react createelement
+React.createElement('div',{className = 'App'},React.createElement('h1',null,'hello world'))
+takes first arugment root , second propertise and third children..
